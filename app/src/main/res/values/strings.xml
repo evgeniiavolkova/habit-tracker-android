@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">habits_tracker</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="add_habit_fragment">New habit</string>
+    <string name="main_fragment">All habit</string>
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_single_page" translatable="false">SinglePageActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="serach">serach</string>
+    <string name="content_description_search" translatable="false">content description search</string>
+    <string name="content_description_more" translatable="false">more</string>
+    <string name="more">more</string>
+    <string name="start" translatable="false">Start :</string>
+    <string name="finish" translatable="false">Finish</string>
+    <string name="add_new_habit">Add new habit</string>
+    <string name="today">Today:</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="dateStringFormat" translatable="false">dd/mm/yyyy</string>
+    <string name="turn_on_notifications">turn on notifications</string>
+    <string name="add_time_notification">add time notification</string>
+    <string name="time_notification" translatable="false">time notification</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="statistics">statistics</string>
+    <string name="add_time">Add time</string>
+    <string name="back">Back</string>
+    <string name="all_habits">All habits</string>
+    <string name="add_note">Add note</string>
+    <string name="place_for_note">Place for note:</string>
+    <string name="save">Save</string>
+    <string name="delete" translatable="false">Delete</string>
+    <string name="not_set" translatable="false">Not set</string>
+</resources>

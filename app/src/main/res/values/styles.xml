@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="homeCardImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Theme.Habits_tracker.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="checkboxStyle">@style/Widget.App.CheckBox</item>
+    </style>
+
+    <style name="Widget.App.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CheckBox</item>
+    </style>
+
+    <style name="ThemeOverlay.App.CheckBox" parent="">
+        <item name="colorOnSurface">@color/secondaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+    </style>
+
+    <style name="Theme.Habits_tracker.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="Example4ToolbarTheme" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorControlNormal">@color/gray</item>
+    </style>
+
+</resources>

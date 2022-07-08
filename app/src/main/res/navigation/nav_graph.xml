@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.habits_tracker.MainFragment"
+        android:label="@string/main_fragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_MainFragment_to_AddHabitFragment"
+            app:destination="@id/AddHabitFragment" />
+
+        <action
+            android:id="@+id/action_AddHabitFragment_to_CheckFragment"
+            app:destination="@id/CheckFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddHabitFragment"
+        android:name="com.example.habits_tracker.AddHabitFragment"
+        android:label=""
+        tools:layout="@layout/fragment_add_habit">
+
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L">
+        </argument>
+
+        <action
+            android:id="@+id/action_AddHabitFragment_to_AddTimeFragment"
+            app:destination="@id/AddTimeFragment" />
+        <action
+            android:id="@+id/action_AddHabitFragment_to_TodayHabitsFragment"
+            app:destination="@id/TodayHabitsFragment"
+            app:popUpTo="@+id/TodayHabitsFragment"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/TodayHabitsFragment"
+        android:name="com.example.habits_tracker.TodayHabitsFragment"
+        android:label="TodayHabitsFragment"
+        tools:layout="@layout/fragment_today_habits" >
+
+        <action
+            android:id="@+id/action_TodayHabitsFragment_to_CheckFragment"
+            app:destination="@id/CheckFragment"/>
+
+        <action
+            android:id="@+id/action_TodayHabitsFragment_to_AddHabitFragment"
+            app:destination="@id/AddHabitFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddTimeFragment"
+        android:name="com.example.habits_tracker.AddTimeFragment"
+        android:label="@string/add_habit_fragment"
+        tools:layout="@layout/fragment_add_time">
+
+        <action
+            android:id="@+id/action_AddTimeFragment_to_AddHabitFragment"
+            app:destination="@id/AddHabitFragment" />
+
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L">
+        </argument>
+
+        <argument
+            android:name="time"
+            app:argType="long"
+            android:defaultValue="-1L">
+        </argument>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CheckFragment"
+        android:name="com.example.habits_tracker.CheckFragment"
+        android:label="@string/main_fragment"
+        tools:layout="@layout/fragment_check">
+
+        <action
+            android:id="@+id/action_CheckFragment_to_StatisticsFragment"
+            app:destination="@id/StatisticsFragment" />
+
+        <action
+            android:id="@+id/action_CheckFragment_to_AddHabitFragment"
+            app:destination="@id/AddHabitFragment" />
+
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L">
+        </argument>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/StatisticsFragment"
+        android:name="com.example.habits_tracker.StatisticsFragment"
+        android:label="@string/add_habit_fragment"
+        tools:layout="@layout/fragment_statistics">
+
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L">
+        </argument>
+
+    </fragment>
+
+</navigation>

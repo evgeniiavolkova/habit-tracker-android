@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddHabitFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="16sp"
+            android:textColor="@color/secondaryTextColor"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            />
+        <com.example.habits_tracker.views.TitleInputView
+            android:id="@+id/habitTitle"
+            app:title_hint="@string/title"
+            app:hint="@string/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textSize="16sp"
+            android:textColor="@color/secondaryTextColor"
+            android:paddingStart="20dp"/>
+
+        <com.example.habits_tracker.views.DescriptionInputView
+            android:id="@+id/habitDescription"
+            app:description_hint="@string/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:id="@+id/startText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start" />
+
+            <EditText
+                android:id="@+id/startDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/startText"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/dateStringFormat" />
+
+            <TextView
+                android:id="@+id/finishText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="84dp"
+                android:text="@string/finish" />
+
+            <EditText
+                android:id="@+id/finishDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/finishText"
+                android:hint="@string/dateStringFormat"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+        </RelativeLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:paddingStart="30dp"
+            android:id="@+id/isNotificationOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="40dp"
+            android:checked="false"
+            android:text="@string/add_note"/>
+
+
+        <LinearLayout
+            android:paddingTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/timeNotificationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/add_time"
+                app:icon="@drawable/ic_access_time" />
+
+            <TextView
+                android:id="@+id/clock"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/not_set"
+                android:gravity="center"
+                android:visibility="gone"
+                android:format24Hour="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_for_note"
+                android:textSize="16sp"
+                android:textColor="@color/secondaryTextColor"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                tools:ignore="RtlSymmetry"
+                android:visibility="visible"/>
+
+            <com.example.habits_tracker.views.TextInputView
+                android:id="@+id/textIsNotificationOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ChBoxes"
+            android:paddingStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/monday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.App.CheckBox"
+                android:text="@string/monday"/>
+            <CheckBox
+                android:id="@+id/tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.App.CheckBox"
+                android:text="@string/tuesday"/>
+            <CheckBox
+                android:id="@+id/wednesday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.App.CheckBox"
+                android:text="@string/wednesday"/>
+            <CheckBox
+                android:id="@+id/thursday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.App.CheckBox"
+                android:text="@string/thursday"/>
+            <CheckBox
+                android:id="@+id/friday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.App.CheckBox"
+                android:text="@string/friday"/>
+            <CheckBox
+                android:id="@+id/saturday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.App.CheckBox"
+                android:text="@string/saturday"/>
+            <CheckBox
+                android:id="@+id/sunday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.App.CheckBox"
+                android:text="@string/sunday"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/save"
+                android:layout_marginStart="30dp"
+                android:layout_alignParentStart="true"
+                app:icon="@drawable/ic_baseline_add_24" />
+
+            <Button
+                android:layout_alignParentEnd="true"
+                android:id="@+id/deleteButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_marginEnd="30dp"
+                app:icon="@drawable/ic_delete" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

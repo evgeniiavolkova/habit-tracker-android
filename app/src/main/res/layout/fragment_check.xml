@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CheckFragment">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/statistic"
+        app:icon="@drawable/ic_arrow_forward"
+        app:iconGravity="end"
+        android:text="@string/statistics"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/secondaryDarkColor"
+        android:paddingStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/checkButton"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn"
+            app:backgroundTint="@color/ciuntBtn"
+            app:icon="@drawable/ic_check_48"
+            android:clickable="true"
+            app:iconGravity="textTop" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn"
+            app:backgroundTint="#727171"
+            android:backgroundTint="@color/ciuntBtn"
+            app:icon="@drawable/ic_horizontal_rule"
+            app:iconGravity="textTop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:orientation="horizontal"
+            android:paddingStart="30dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="30dp">
+
+            <TextView
+                android:id="@+id/habitTitle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:maxLines="4"
+                android:text="@string/turn_on_notifications"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/habitDescription"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:maxWidth="200dp"
+                android:maxLines="4"
+                android:text="@string/turn_on_notifications"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/note"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/note_shape"
+                android:text="@string/add_note"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="70dp">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/deleteButton"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/secondaryDarkColor"
+            app:fabSize="mini"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/ic_delete"
+            app:tint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rewriteButton"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            app:backgroundTint="@color/secondaryDarkColor"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_edit"
+            app:tint="@color/white" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

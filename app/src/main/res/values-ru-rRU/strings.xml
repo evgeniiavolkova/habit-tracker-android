@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">habits_tracker</string>
+    <string name="add_habit_fragment">Добавь</string>
+
+    <string name="main_fragment">Все</string>
+
+    <string name="serach">искать</string>
+    <string name="more">еще</string>
+    <string name="add_new_habit">Создать</string>
+
+    <string name="today">Сегодня</string>
+
+    <string name="title">Заголовок</string>
+    <string name="description">Описание</string>
+    <string name="turn_on_notifications">"Включить "</string>
+    <string name="add_time_notification">Добавить время</string>
+
+    <string name="monday">Понедельник</string>
+
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="sunday">Воскресенье</string>
+
+    <string name="statistics">статистика</string>
+    <string name="add_time">Время</string>
+
+    <string name="back">Назад</string>
+    <string name="all_habits">Все</string>
+    <string name="add_note">Добавить описание</string>
+    <string name="place_for_note">Место для заметки</string>
+    <string name="save">Сохранить</string>
+</resources>
