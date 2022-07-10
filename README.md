@@ -7,4 +7,5 @@ Habit tracker Android mobile app in Kotlin built for my school course EBC-VA1 - 
 * **Room Database** framework for SQLite database date persistence
 # Main Features
 <p align="center"><img src="img/android-preview.gif" width="320"/></p>
-## Screenshots
+
+# Screenshots
