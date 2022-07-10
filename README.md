@@ -8,4 +8,12 @@ Habit tracker Android mobile app in Kotlin built for my school course EBC-VA1 - 
 # Main Features
 <p align="center"><img src="img/android-preview.gif" width="320"/></p>
 
-# Screenshots
+## Screenshots
+<p align="center">
+<img src="img/Screenshot_20220614_032126.png" width="220">
+  <img src="img/Screenshot_20220614_032150.png" width="220" />
+  <img src="img/timeFragment.png" width="220" /><br>
+<img src="img/checkFrgament.png" width="220" />
+  <img src="img/todayFragment.png" width="220" />
+  <img src="img/statistics.png" width="220" />
+</p>
